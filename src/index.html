@@ -130,7 +130,7 @@
         /* Адаптивная сетка фотографий: число колонок меняется само. */
         .gallery-grid {
           display: grid;
-          grid-template-columns: repeat(4, 1fr);
+          grid-template-columns: repeat(2, 1fr);
           gap: 18px;
           margin-top: 34px;
         }
@@ -142,8 +142,10 @@
           box-shadow: 0 5px 15px rgba(24, 40, 54, 0.08);
         }
 
-        .machine-card img { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
-        .machine-card figcaption { padding: 14px 15px; font-weight: 700; }
+        .machine-card img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+        .machine-card figcaption { padding: 14px 15px; background: #fff3d9; font-weight: 700; }
+
+        .services { background: var(--white); }
 
         .services-layout {
           display: grid;
@@ -225,7 +227,7 @@
         </div>
     </section>
 
-    <section aria-labelledby="services-title">
+    <section class="services" aria-labelledby="services-title">
         <div class="container services-layout">
             <div>
                 <p class="eyebrow">Что делаем</p>
