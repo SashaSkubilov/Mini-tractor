@@ -36,7 +36,6 @@
           margin: 0 auto;
         }
 
-        /* Верхний экран знакомит посетителя с услугой и ведёт к контактам. */
         .hero {
           min-height: 600px;
           display: grid;
@@ -127,7 +126,6 @@
         .section-heading { max-width: 650px; }
         .section-heading p:last-child { color: var(--muted); }
 
-        /* Адаптивная сетка фотографий: число колонок меняется само. */
         .gallery-grid {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
@@ -249,7 +247,6 @@
             <h2 id="contacts-title">Обсудим вашу задачу</h2>
             <p class="contacts-intro">Позвоните, напишите в Viber или скопируйте номер. Ответим на вопросы и согласуем выезд техники.</p>
             <div class="contact-grid">
-                <!-- data-phone хранит номер в международном цифровом формате для копирования. -->
                 <article class="contact-card" data-phone="+79991234567">
                     <h3>Алексей, диспетчер</h3>
                     <a class="phone-number" href="tel:+79991234567">+7 (999) 123-45-67</a>
@@ -278,7 +275,6 @@
 </footer>
 
 <script>
-    // Копирование номера с резервным вариантом для старых браузеров или небезопасных контекстов.
     function copyPhone(phone) {
       if (navigator.clipboard && window.isSecureContext) {
         return navigator.clipboard.writeText(phone);
@@ -319,7 +315,6 @@
       });
     });
 
-    // Год в подвале обновляется автоматически.
     document.querySelector('#year').textContent = new Date().getFullYear();
 </script>
 </body>
